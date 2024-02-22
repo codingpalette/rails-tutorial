@@ -1,9 +1,14 @@
-import { Application } from "@hotwired/stimulus"
+import { Application } from "@hotwired/stimulus";
+import dayjs from "dayjs";
 
-const application = Application.start()
+const application = Application.start();
 
 // Configure Stimulus development experience
-application.debug = false
-window.Stimulus   = application
+application.debug = false;
+window.Stimulus = application;
 
-export { application }
+// console.log("123123");
+// const aa = dayjs().format("YYYY-MM-DD HH:mm:ss");
+// console.log(aa);
+
+export { application };
